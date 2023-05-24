@@ -10,7 +10,6 @@ int deletar();
 int main () 
 {
 	int opcao = 0; // Definindo a variável
-	int laco = 1;
 	int resposta;
 	
 	setlocale(LC_ALL, "Portuguese"); // Definindo a linguagem
@@ -47,20 +46,20 @@ int main ()
 				switch (opcao)
 				{
 					case 1:
-					registro();
+						registro();
 					break;
 				
 					case 2:
-					consulta();
+						consulta();
 					break;
 				
 					case 3:
-					deletar();
+						deletar();
 					break;
 				
 					default:
-					printf("Escolha inválida. \n\n");
-					system("pause");
+						printf("Escolha inválida. \n\n");
+						system("pause");
 					break;
 				}
 	
@@ -68,6 +67,7 @@ int main ()
 	}while (resposta == 1);
 	
 	printf("Saindo...\n\n");
+	return 0;
 }
 
 // ===================================================================================================
